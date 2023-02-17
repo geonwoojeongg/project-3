@@ -4,8 +4,11 @@
 
 
 Team members: Jane, Alisha, Andy, Ose
+
 Sector: Human resources (Health Care Sector)
+
 Data source: Kaggle.com
+
 Project goal: Evaluate employee retention and attrition rates by various factors based on the healthcare sector database in the US.
 
 Retention rate by gender
