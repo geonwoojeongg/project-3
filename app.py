@@ -36,9 +36,11 @@ app = Flask(__name__)
 def welcome():
     """List all available api routes."""
     return (
-        f"<h1>Welcome to the Climate App API!</h1>"
+        f"<h1>Welcome to the Healthcare HR App API!</h1>"
+        f'<img src="https://techcrunch.com/wp-content/uploads/2020/09/GettyImages-1211152561.jpg?w=1390&crop=1" align="middle" />'
         f"<h2>Here are the routes available:</h2>"
         f"HR Healthcare info: /api/v1.0/health<br/>"
+        f"Direct Link: http://127.0.0.1:5000/api/v1.0/health"
     )
 
 @app.route('/api/v1.0/health')
