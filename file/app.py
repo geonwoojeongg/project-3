@@ -7,7 +7,7 @@ from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
 
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 
 
 #################################################
@@ -35,11 +35,7 @@ app = Flask(__name__)
 @app.route("/")
 def welcome():
     """List all available api routes."""
-    return (
-        f"<h1>Welcome to the Climate App API!</h1>"
-        f"<h2>Here are the routes available:</h2>"
-        f"HR Healthcare info: /api/v1.0/health<br/>"
-    )
+    return render_template('index.html')
 
 @app.route('/api/v1.0/health')
 def precipitation():
