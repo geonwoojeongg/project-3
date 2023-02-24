@@ -1,23 +1,67 @@
-const file = "healthcare_data.json";
+const file = "/api/v1.0/health";
 let d3Data = [];
+
 
 // init
 function init() {
 
   let dropdownMenu = d3.select("#selDataset");
 
-  d3.json('/api/v1.0/health').then((data) => {
+  d3.json(file).then((data) => {
 
     console.log(data)
-  //   d3Data = data;
-  //   let names = data.names;
+    // d3Data = data;
+    for (let i=0; i<=data.length; i++){
+    let gender = data[i].Gender;
+    console.log(gender)
+    }
+  })
 
-  //   names.forEach((id) => {
-  //     dropdownMenu
-  //       .append("option")
-  //       .text(id)
-  //       .property("value",id);
-  //   });
+  // On change to the DOM, call getData()
+d3.selectAll("#selDataset").on("change", getData);
+
+// Function called by DOM changes
+function getData() {
+  let dropdownMenu = d3.select("#selDataset");
+  // Assign the value of the dropdown menu option to a letiable
+  let dataset = dropdownMenu.property("value");
+  console.log(dataset)
+  // Initialize an empty array for the country's data
+  // let data = [];
+}
+
+  // On change to the DOM, call getData()
+  d3.selectAll("#selDataset2").on("change", getData);
+
+  // Function called by DOM changes
+  function getData() {
+    let dropdownMenu = d3.select("#selDataset2");
+    // Assign the value of the dropdown menu option to a letiable
+    let dataset2 = dropdownMenu.property("value");
+    console.log(dataset2)
+    // Initialize an empty array for the country's data
+    // let data = [];
+  }
+
+    // On change to the DOM, call getData()
+    d3.selectAll("#selDataset3").on("change", getData);
+
+    // Function called by DOM changes
+    function getData() {
+      let dropdownMenu = d3.select("#selDataset3");
+      // Assign the value of the dropdown menu option to a letiable
+      let dataset3 = dropdownMenu.property("value");
+      console.log(dataset3)
+      // Initialize an empty array for the country's data
+      // let data = [];
+    }
+
+    // gender.forEach((id) => {
+    //   dropdownMenu
+    //     .append("option")
+    //     .text(id)
+    //     .property("value",id);
+    // });
 
   //   let sample1 = names[0];
 
@@ -25,7 +69,7 @@ function init() {
   //   BarChart(sample1);
   //   BubbleChart(sample1);
   // });
-});
+};
 
 // bar chart
 // function BarChart(sample) {
@@ -109,6 +153,5 @@ function init() {
 //   BarChart(value);
 //   BubbleChart(value);
 // };
-}
 
 init();

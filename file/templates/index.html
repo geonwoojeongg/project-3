@@ -22,15 +22,41 @@
       <div class="col-md-2">
         <div class="well">
           <h5>Gender:</h5>
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
-          <h5>Marital Status:</h5>
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
-          <h5>Department:</h5>
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
-          <h5>age:</h5>
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          <select id="selDataset">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
         </div>
-        
+       
+        <div class="well">
+          <h5>Marital Status:</h5>
+          <select id="selDataset2">
+            <option value="Married">Married</option>
+            <option value="Single">Single</option>
+            <option value="Divorced">Divorced</option>
+        </select>
+        </div>
+
+        <div class="well">
+          <h5>Department:</h5>
+          <select id="selDataset3">
+            <option value="Cardiology">Cardiology</option>
+            <option value="Maternity">Maternity</option>
+            <option value="Neurology">Neurology</option>
+          </select>
+        </div>
+
+        <div class="well">
+          <h5>JobSatisfaction:</h5>
+          <select id="selDataset3">
+            <option value="1">Notsatisfied</option>
+            <option value="2">Neutral</option>
+            <option value="3">Satisfied</option>
+            <option value="4">VerySatisfied</option>
+          </select>
+          <div id="pie"></div>
+        </div>
+
         <div class="panel panel-primary">
           <div class="panel-heading">
             <h3 class="panel-title"><Summary></Summary></h3>
