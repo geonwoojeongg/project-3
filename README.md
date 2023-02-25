@@ -3,7 +3,7 @@
 ## An analysis on employee retention and attrition rates by various factors based on the healthcare sector database in the US
 
 
-Team members: Jane, Alisha, Andy, Ose
+Team members: Jane, Payal Dhillon (Alisha), Andy, Ose
 
 Sector: Human resources (Health Care Sector)
 
