@@ -1,34 +1,63 @@
 const file = "/api/v1.0/health";
 let d3Data = [];
 
-
-// init
-function init() {
-
-  let dropdownMenu = d3.select("#selDataset");
-
-  d3.json(file).then((data) => {
-
-    console.log(data)
-    // d3Data = data;
-    for (let i=0; i<=data.length; i++){
-    let gender = data[i].Gender;
-    console.log(gender)
-    }
-  })
-
   // On change to the DOM, call getData()
-d3.selectAll("#selDataset").on("change", getData);
+  d3.selectAll("#selDataset").on("change", getData);
 
 // Function called by DOM changes
 function getData() {
   let dropdownMenu = d3.select("#selDataset");
-  // Assign the value of the dropdown menu option to a letiable
-  let dataset = dropdownMenu.property("value");
-  console.log(dataset)
-  // Initialize an empty array for the country's data
-  // let data = [];
+    // Assign the value of the dropdown menu option to a letiable
+    let dataset = dropdownMenu.property("value");
+      console.log(dataset)
 }
+// init
+function init() {
+  d3.json(file).then((data) => {
+
+  // Initialize an empty array for the country's data
+    let gender = []
+    let attrition = []
+    let label = []
+
+    console.log(data)
+    // d3Data = data;
+    for (let i=0; i<=data.length; i++){
+      let info = Object.values(data)
+      if (gender == dataset){
+    gender.push(info[i].Gender)};
+    console.log(gender)
+    attrition.push(data[i].Attrition);
+    console.log(attrition)
+    label.push(data[i].TotalWorkingYears);
+    console.log(label)
+    }
+  
+
+        let barX_axis = gender;
+        let barY_axis = attrition;
+        let barLabels = label;
+
+        console.log(barX_axis);
+        console.log(barY_axis);
+        console.log(barLabels);
+  
+        let barTrace = {
+            x: barX_axis,
+            y: barY_axis,
+            mode: 'markers', 
+            text: barLabels,
+            type: 'bar'
+        };
+        let barData = [barTrace]; 
+
+        let barLayout = {
+            title: "Gender vs Attrition",
+        };
+  
+        Plotly.newPlot('bar', barData, barLayout);
+      
+  })
 
   // On change to the DOM, call getData()
   d3.selectAll("#selDataset2").on("change", getData);
