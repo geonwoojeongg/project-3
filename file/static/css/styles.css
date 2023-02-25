@@ -1,13 +1,3 @@
-#custom-bg {
-    background-image: url('https://thumbs.dreamstime.com/z/healthcare-medical-background-flat-icons-symbols-science-medicine-innovation-technology-concept-140008777.jpg');
-    -webkit-background-size: cover; 
-    -moz-background-size: cover;
-    -o-background-size: cover; 
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 #text {
     font-weight: bold;
     font-size: large;
