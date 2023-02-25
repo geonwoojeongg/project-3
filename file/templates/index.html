@@ -22,66 +22,54 @@
       <div class="col-md-2">
         <div class="well">
           <h5>Gender:</h5>
-          <select id="selDataset">
+          <select id="selDataset" onchange="optionChangedGender(this.value)">
             <option value="Male">Male</option>
             <option value="Female">Female</option>
         </select>
-        <div id="bar"></div>
+        <div id="gender_pie"></div>
         </div>
        
         <div class="well">
           <h5>Marital Status:</h5>
-          <select id="selDataset2">
+          <select id="selDataset2" onchange="optionChangedmarital(this.value)">
             <option value="Married">Married</option>
             <option value="Single">Single</option>
             <option value="Divorced">Divorced</option>
         </select>
-        <div id="pie"></div>
+        <div id="marital_bar"></div>
         </div>
 
         <div class="well">
           <h5>Department:</h5>
-          <select id="selDataset3">
+          <select id="selDataset3" onchange="optionChangedDepartment(this.value)">
             <option value="Cardiology">Cardiology</option>
             <option value="Maternity">Maternity</option>
             <option value="Neurology">Neurology</option>
           </select>
-          <!-- horizontal bar chart -->
-          <div id="bar"></div> 
+          <div id="department_bar"></div> 
         </div>
 
         <div class="well">
           <h5>JobSatisfaction:</h5>
-          <select id="selDataset3">
-            <option value="1">Notsatisfied</option>
+          <select id="selDataset4" onchange="optionChangedJobSatisfaction(this.value)">
+            <option value="1">Not Satisfied</option>
             <option value="2">Neutral</option>
             <option value="3">Satisfied</option>
-            <option value="4">VerySatisfied</option>
+            <option value="4">Very Satisfied</option>
           </select>
-          <!-- Donut pie chart (hole=.#) -->
-          <div id="pie"></div>
+          <div id="JobSatisfaction_pie"></div>
         </div>
-
-        <!-- <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title"><Summary></Summary></h3>
-          </div>
-          <div id="sample-metadata" class="panel-body"></div>
-        </div>
-      </div> -->
-      <!-- <div class="col-md-5">
-        <div id="bar"></div>
-      </div> -->
-      <!-- <div class="col-md-5">
-        <div id="pie"></div>
-      </div> -->
-    <!-- </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div id="sunburst"></div>
-      </div>
-    </div>
-  </div> -->
+<!-- 
+        <div class="well">
+          <h5>Hourly Rate:</h5>
+          <select id="selDataset5" onchange="optionChangedHourlyRate(this.value)">
+            <option value="1">Not Satisfied</option>
+            <option value="2">Neutral</option>
+            <option value="3">Satisfied</option>
+            <option value="4">Very Satisfied</option>
+          </select>
+          <div id="hourlyrate_scatter"></div>
+        </div> -->
 
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
