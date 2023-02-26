@@ -11,19 +11,21 @@ Project goal: Evaluate employee retention and attrition rates by various factors
 
 database is used to house the data: health.sqlite (http://127.0.0.1:5000/api/v1.0/health)
 
-Retention rate by gender
+## Research Questions
+
+### Retention rate vs gender
 
 <img width="873" alt="Screenshot 2023-02-25 at 7 29 44 PM" src="https://user-images.githubusercontent.com/106120403/221385869-c1784ec0-0123-465c-8ab8-ac1482289949.png">
 
-Retention rate by Marital Status
+### Retention rate vs Marital Status
 
 <img width="979" alt="Screenshot 2023-02-25 at 7 22 19 PM" src="https://user-images.githubusercontent.com/106120403/221385682-d4b6c0f2-9b5e-4b69-a67f-e5e09070cbb4.png">
 
-Retention rate by department
+### Retention rate vs department
 
 <img width="1067" alt="Screenshot 2023-02-25 at 7 33 52 PM" src="https://user-images.githubusercontent.com/106120403/221385974-0d61e4c5-f959-4bc9-9e2c-ca2868fc1538.png">
 
-Retention rate by Job Satisfaction
+### etention rate vs Job Satisfaction
 
 <img width="716" alt="Screenshot 2023-02-25 at 7 35 42 PM" src="https://user-images.githubusercontent.com/106120403/221386032-f79cb88e-9b6b-4cfa-9d15-2391689f55ad.png">
 
