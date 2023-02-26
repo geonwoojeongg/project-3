@@ -1,5 +1,7 @@
 # An analysis on employee retention and attrition rates by various factors based on the healthcare sector database in the US
 
+Link to Slide: https://docs.google.com/presentation/d/1UWP7KtaOD43Nu9XVmUkzutt46SMLdwcy53d_GTyMzyA/edit?usp=sharing
+
 <img width="403" alt="Screenshot 2023-02-25 at 7 08 48 PM" src="https://user-images.githubusercontent.com/106120403/221385278-544fe220-3804-41d3-970f-4b8f8bdde1d4.png">
 
 
