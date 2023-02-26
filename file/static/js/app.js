@@ -137,3 +137,49 @@ function buildJobSatisfactionpieChart(x){
 };
 
 init();
+
+var chart1 = Highcharts.chart("container", {
+  chart: {
+    type: 'bar'
+  },
+  title: {
+      text: 'Employee Hourly Rate Groups and Attrition Rates',
+      align: 'left'
+  },
+
+  xAxis: {
+    categories: ['30-39', '40-49', '50-59', '60-69', '70-79', '80-89', '90-100'], 
+        title: {
+          text: 'Hourly Rate Ranges (USD)'
+        }
+    },
+
+  yAxis: {
+      title: {
+          text: 'Number of Retention & Attrition'
+      }
+  },
+
+  plotOptions: {
+    bar: {
+        dataLabels: {
+            enalbed: true
+        }
+    }
+  },
+
+  legend: {
+      layout: 'vertical',
+      align: 'right',
+      verticalAlign: 'middle'
+  },
+
+  series: [{
+      name: 'Number of Retention',
+      data: [172, 235, 207, 193, 213, 230, 233]
+  }, {
+      name: 'Number of Attrition',
+      data: [27, 31, 38, 32, 30, 25, 23]
+  }],
+
+});

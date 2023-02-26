@@ -9,14 +9,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!-- Our own CSS stylesheet -->
   <link rel="stylesheet" href="static/css/styles.css" media="screen">
+  <script src="https://code.highcharts.com/highcharts.js"></script>
 </head>
 
 <style>
-body {
-  background-image: url("https://thumbs.dreamstime.com/z/healthcare-medical-background-flat-icons-symbols-science-medicine-innovation-technology-concept-140008777.jpg");
-}
-</style>
-
+  body {
+    background-image: url("https://thumbs.dreamstime.com/z/healthcare-medical-background-flat-icons-symbols-science-medicine-innovation-technology-concept-140008777.jpg");
+  }
+  </style>
 
 <body>
 
@@ -28,7 +28,7 @@ body {
       </div>
     </div>
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-md-12">
         <div class="well">
           <h5>Gender:</h5>
           <select id="selDataset" onchange="optionChangedGender(this.value)">
@@ -68,22 +68,18 @@ body {
           </select>
           <div id="JobSatisfaction_pie"></div>
         </div>
-<!-- 
-        <div class="well">
-          <h5>Hourly Rate:</h5>
-          <select id="selDataset5" onchange="optionChangedHourlyRate(this.value)">
-            <option value="1">Not Satisfied</option>
-            <option value="2">Neutral</option>
-            <option value="3">Satisfied</option>
-            <option value="4">Very Satisfied</option>
-          </select>
-          <div id="hourlyrate_scatter"></div>
-        </div> -->
+
+        <div class="highcharts-figure">
+          <div id="container"></div>
+        </div>
 
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="static/js/app.js"></script>
-  
+
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
   
 </body>
 
