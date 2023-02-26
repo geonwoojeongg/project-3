@@ -9,6 +9,8 @@ Data source: Kaggle.com
 
 Project goal: Evaluate employee retention and attrition rates by various factors based on the healthcare sector database in the US.
 
+database is used to house the data: health.sqlite (http://127.0.0.1:5000/api/v1.0/health)
+
 Retention rate by gender
 
 <img width="873" alt="Screenshot 2023-02-25 at 7 29 44 PM" src="https://user-images.githubusercontent.com/106120403/221385869-c1784ec0-0123-465c-8ab8-ac1482289949.png">
