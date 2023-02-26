@@ -4,7 +4,9 @@
 
 Contributors: Jane, Payal Dhillon (Alisha), Andy, Ose
 
-Data source: Kaggle.com
+Data source: Kaggle.com 
+
+https://www.kaggle.com/datasets/925f54cca84887ec452f1ae1cd430ba9b37cfa555c2e1575760c3f2265c3a696
 
 Project goal: Evaluate employee retention and attrition rates by various factors based on the healthcare sector database in the US.
 
