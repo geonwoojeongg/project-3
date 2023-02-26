@@ -4,7 +4,6 @@ Link to Slide: https://docs.google.com/presentation/d/1UWP7KtaOD43Nu9XVmUkzutt46
 
 <img width="403" alt="Screenshot 2023-02-25 at 7 08 48 PM" src="https://user-images.githubusercontent.com/106120403/221385278-544fe220-3804-41d3-970f-4b8f8bdde1d4.png">
 
-
 Contributors: Jane, Payal Dhillon (Alisha), Andy, Ose
 
 Data source: Kaggle.com 
@@ -31,6 +30,9 @@ database is used to house the data: health.sqlite (http://127.0.0.1:5000/api/v1.
 
 <img width="716" alt="Screenshot 2023-02-25 at 7 35 42 PM" src="https://user-images.githubusercontent.com/106120403/221386032-f79cb88e-9b6b-4cfa-9d15-2391689f55ad.png">
 
+### Employees Hourly Rates vs Attrition
+
+<img width="1141" alt="Screenshot 2023-02-26 at 7 35 09 AM" src="https://user-images.githubusercontent.com/106120403/221410785-637d8d20-4a81-42cc-806a-3745cab5d3d9.png">
+
 Reference: https://www.kaggle.com/datasets/925f54cca84887ec452f1ae1cd430ba9b37cfa555c2e1575760c3f2265c3a696
 
-If we continue analyzing all the data (married or divorced / comparatively high hourly rate or no, etc.) then we can answer the following question: what is the leading cause of attrition? Are they positively/negatively correlated? 
