@@ -26,7 +26,7 @@ database is used to house the data: health.sqlite (http://127.0.0.1:5000/api/v1.
 
 <img width="1067" alt="Screenshot 2023-02-25 at 7 33 52 PM" src="https://user-images.githubusercontent.com/106120403/221385974-0d61e4c5-f959-4bc9-9e2c-ca2868fc1538.png">
 
-### etention rate vs Job Satisfaction
+### Retention rate vs Job Satisfaction
 
 <img width="716" alt="Screenshot 2023-02-25 at 7 35 42 PM" src="https://user-images.githubusercontent.com/106120403/221386032-f79cb88e-9b6b-4cfa-9d15-2391689f55ad.png">
 
