@@ -34,5 +34,8 @@ database is used to house the data: health.sqlite (http://127.0.0.1:5000/api/v1.
 
 <img width="1141" alt="Screenshot 2023-02-26 at 7 35 09 AM" src="https://user-images.githubusercontent.com/106120403/221410785-637d8d20-4a81-42cc-806a-3745cab5d3d9.png">
 
+### Total Number of Attrition
+![download](https://user-images.githubusercontent.com/116124181/221476592-5aab1c69-b801-4184-b49f-86e8848330ed.png)
+
 Reference: https://www.kaggle.com/datasets/925f54cca84887ec452f1ae1cd430ba9b37cfa555c2e1575760c3f2265c3a696
 
