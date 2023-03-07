@@ -14,6 +14,10 @@ Project goal: Evaluate employee retention and attrition rates by various factors
 
 database is used to house the data: health.sqlite (http://127.0.0.1:5000/api/v1.0/health)
 
+## Dashboard
+
+http://127.0.0.1:5000/
+
 ## Research Questions
 
 ### Retention rate vs gender
